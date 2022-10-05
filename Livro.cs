@@ -5,6 +5,13 @@ public class Livro{
     string editora;
     List<Exemplar> exemplares;
 
+    public Livro(int i, string t, string a, string e){
+        this.isbn = i;
+        this.titulo = t;
+        this.autor = a;
+        this.editora = e;
+    }
+
     public void adicionarExemplar(Exemplar exemplar){
         exemplares.Add(exemplar);
     }
